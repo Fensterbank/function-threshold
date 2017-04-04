@@ -25,7 +25,7 @@ export default class FunctionThreshold {
       this.calls.splice(0, remove);
 
     if (this.calls.length > this.limit)
-      throw new Error(`Reached function call threshold of ${this.limit} calls in the last ${this.timeframe} ms.`);
+      throw new Error(`Reached threshold of ${this.limit} function executions in the last ${this.timeframe} ms.`);
     
     this.calls.push(now);
     return this.method.apply(this, arguments);

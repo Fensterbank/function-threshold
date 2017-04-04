@@ -1,6 +1,6 @@
 {
   "name": "function-threshold",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Limit the amount of times a function can be called in a specific timeframe and throw an error if the limit is exceeded.",
   "main": "lib/function-threshold.js",
   "scripts": {

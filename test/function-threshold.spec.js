@@ -1,7 +1,7 @@
 /*global describe, it, before */
 
 import chai from 'chai';
-import FunctionThreshold from '../lib/FunctionThreshold.min.js';
+import FunctionThreshold from '../lib/function-threshold.min.js';
 
 chai.expect();
 
@@ -34,7 +34,7 @@ describe('Given an instance of my library with a limit of 5 calls in 10 seconds'
         }
       }
 
-      expect(loop).to.throw('Reached function call threshold of 5 calls in the last 10000 ms.');
+      expect(loop).to.throw('Reached threshold of 5 function executions in the last 10000 ms.');
     });
   });
 });
